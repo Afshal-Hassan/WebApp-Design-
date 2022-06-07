@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem 10.625rem;
+    height: 29.625rem;
+    justify-content: center;
+
+  
+}
+
+
+
+
+
+    
+#main-heading{
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    color:white;
+    
+    
+}
+/*#mainheading::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 20px solid red;
+        left: 0;
+        bottom: 0; 
+}*/
+#home p{
+    margin-top: 1.063rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.55rem;
+    font-family: 'Bree Serif', serif;
+  }
+
+#introduction{
+    
+    display: flex;
+    flex-direction: column;
+    height: 20.125rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: 4px;
+    /*background: linear-gradient(darkturquoise, darkcyan 25%);*/
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+#introduction h2{
+  
+    font-size: 65px;
+    text-shadow: 5px 5px 5px white;
+    color:aquamarine;
+    margin-top: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+#introduction p{
+    
+    color:white;
+    font-size: 21px;
+    margin-top: 25px;
+    margin-left: 18px;
+    margin-right: 18px;
+    word-spacing: 9px;
+    
+} 
+#Django{
+    font-style: italic;
+    color:forestgreen
+} 
+#dot{
+    margin-left: 4px;
+}
+#section-project-based-on{
+    
+    height: 500px;
+    display: flex;
+    margin-top: 29px;
+
+}
+.box1{
+    border: 1px solid black;
+    margin: 35px 15px;
+    border-radius: 25px;
+    width:33.3%;
+    position:relative;
+    overflow: hidden;
+    background-color: black;
+
+   
+}
+.box1 h3{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    font-size: 70px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    transform: translateX(-50%) translateY(-50%);
+
+    
+}
+.box2 h3{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    font-size: 70px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    transform: translateX(-50%) translateY(-50%);
+    
+
+}
+.box3 h3{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    top:50%;
+    font-size: 70px;
+    font-family: 'Bree Serif', serif;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: bold;
+    color: forestgreen;
+
+}
+.box2{
+    border: 1px solid black;
+    margin: 35px 15px;
+    border-radius: 25px;
+    width:33.3%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+
+
+
+}
+.box3{
+    border: 1px solid black;
+    margin: 35px 15px;
+    border-radius: 25px;
+    width:33.3%;
+    position:relative;
+    overflow: hidden;
+    background-color: black;
+
+
+
+}
+#project-based-on-heading{
+    text-align: center;
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 117px;
+    font-family: 'Bree Serif', serif;
+    color:cyan;
+  }
+#tm{
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    color: darkorange;
+
+}  
+#My{
+    color: gray;
+}
+#SQL{
+    color: darkorange;
+}
+#HTML
+{
+    color: chocolate;
+    position: relative;
+}
+#and{
+    color: whitesmoke;
+    position: relative;
+
+}
+#CSS{
+    color: cadetblue;
+    position: relative;
+}
+#Django-box-heding{
+    position: relative;
+}
+.box1 h3::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid gray;
+    left:0;
+    animation-name: MYSQLtyping ;
+    animation-duration: 3.5s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes MYSQLtyping {
+    0%{
+        left: 0%
+
+        
+        }
+    16.6%{
+        left:60px
+    } 
+    33.2%{
+        left:103px
+    }   
+    49.8%{
+        left: 140px
+    }
+    66.4%{
+        left:190px
+    }
+    83%{
+        left:230px
+    }
+    100%{
+        left:265px
+    }
+
+   
+    
+}
+#HTML::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid gray;
+    left:0;
+    animation-name: HTMLtyping ;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes HTMLtyping {
+    0%{
+        left: 0%
+
+        
+        }
+    25%{
+        left:53px
+    } 
+    50%{
+        left:94px
+    }   
+    75%{
+        left:155px
+    }
+    100%{
+        left:195px
+    }
+}
+#and::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid gray;
+    left:0;
+    animation-name: andtyping ;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes andtyping {
+    0%{
+        left:0
+    }
+    33.3%{
+        left:42px
+    }
+    66.6%{
+        left: 87px;
+    }
+    100%{
+        left: 130px;
+    }
+}
+#CSS::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid gray;
+    animation-name: andtyping ;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    left:0;
+
+}
+#Django-box-heading::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid gray;
+    animation-name: Django-typing ;
+    animation-duration: 3.5s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    left:0;
+
+
+}
+@keyframes Django-typing {
+
+    0%{
+        left: 0%
+
+        
+        }
+    16.6%{
+        left: 51px;
+    } 
+    33.2%{
+        left:75px
+    }   
+    49.8%{
+        left: 115px
+    }
+    66.4%{
+        left:155px
+    }
+    83%{
+        left:195px
+    }
+    100%{
+        left:235px
+    }
+
+}
+.hr{
+    width: 100%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:whitesmoke;
+    border: none;    
+    outline: none;
+    margin-top: 67px;
+   
+
+}
+
+   

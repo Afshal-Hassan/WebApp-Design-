@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login.css">
+  <link rel="stylesheet" href="Signup.css">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="Login.js"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div id="banner1">
+    <nav id="navbar">
+      <div id="logo">
+        <img src="avatar.jpg">
+      </div>
+      <ul>
+        <li class="item"><a href="New2.html">Home</a></li>
+        <li class="item"><a href="Login.html">Login</a></li>
+        <li class="item"><a href="aboutus.html">About Us</a></li>
+        <li class="item"><a href="#services">Services</a></li>
+        <li class="item"><a href="#contactus">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="login">
+      <div>
+        <h2 id="heading">Login!</h2>
+
+        <fieldset>
+          <form>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+
+            <input type="password" id="password" placeholder="Password"><br>
+            <button id="Login" ><span></span>Submit</button>
+          </form>
+
+          <input type="submit" value="Login" id="submit">
+          <button id="signupbutton" onclick="signup()">Signup</button>
+        </fieldset>
+
+
+      </div>
+
+    </section>
+    <section id="signup">
+      <div id="signup1">
+        <h2 id="heading1">Signup!</h2>
+        <fieldset>
+          <form accept="Signup" method="post">
+
+            <input type="text" id="username1" placeholder="Username" name="username1" autocomplete="off"><br>
+            <input type="email" id="email1" placeholder="Email" autocomplete="off"><br>
+
+            <input type="password" name="password1" id="password1" placeholder="Password"><br>
+            <input type="tel" id="phone" name="phone" placeholder="+92" autocomplete="off">
+            <div id="radio123"> <input type="radio" name="gender" value="male" class="radio" autocomplete="off"><span
+                id="Male">Male</span>
+
+              <input type="radio" name="gender" value="female" class="radio"> <span id="Female"
+                autocomplete="off">Female</span>
+              <input type="radio" name="gender" value="other" class="radio" autocomplete="off"> <span
+                id="Others">Others</span>
+            </div>
+
+
+
+            <button id="Submitted" ><span></span>Submit</button>
+
+
+
+
+
+
+
+          </form>
+          <button id="submit1" onclick="login()">Login</button>
+          <button id="signupbutton1">Signup</button>
+        </fieldset>
+
+      </div>
+   
+
+    </section>
+
+    <div class="bubbles1">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+      <img src="bubble.png">
+
+    </div>
+    <div class="spinner">
+      
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>

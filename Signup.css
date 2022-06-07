@@ -1,0 +1,272 @@
+#signup{
+    
+    display:none;
+    flex-direction: column;
+    text-align: center;
+    
+    width: 99.5%;
+    height:90vh;
+   
+}
+#signup1{
+    
+    position: relative;
+    top: 120px;
+    box-sizing: border-box;
+    
+}
+#signup1 h2{
+    font-size: 83px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 30px;
+    font-family:'Bree Serif', serif; 
+}
+#signup1 fieldset{
+  outline: none;
+  border: none;
+    height: 83%;
+    box-sizing: border-box;
+   
+}
+#username1{
+    width: 370px;
+    background: transparent;
+    height: 48px;
+    border: 2px solid honeydew;
+    border-radius: 25px;
+    color: honeydew;
+    padding-left: 24px ;
+    font-size: 17px;
+    outline: none;
+}
+#email1{
+    width: 370px;
+    background: transparent;
+    height: 48px;
+    border: 2px solid honeydew;
+    border-radius: 25px;
+    color: honeydew;
+    padding-left: 24px ;
+    font-size: 17px;
+    margin-top: 30px;
+    outline: none;
+}
+#password1{
+    width: 370px;
+    background: transparent;
+    height: 48px;
+    border: 2px solid honeydew;
+    border-radius: 25px;
+    color: honeydew;
+    padding-left: 24px ;
+    font-size: 17px;
+    margin-top: 30px;
+    outline: none;
+}
+
+#phone{
+    width: 370px;
+    background: transparent;
+    height: 48px;
+    border: 2px solid honeydew;
+    border-radius: 25px;
+    color: honeydew;
+    padding-left: 24px ;
+    font-size: 17px;
+    margin-top: 30px;
+    outline: none;
+}
+#Male{
+  
+    color: honeydew;
+    margin-right: 15px;
+
+}
+#radio123{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    margin-top: 30px;
+
+
+}
+#Female{
+    color: honeydew;
+    margin-right: 15px;
+
+}
+#Others{
+    color: honeydew;
+    margin-right: 15px;
+}
+.radio{
+    margin-right: 8px;
+}
+#submit1{
+    position: relative;
+   
+    width:142px;
+    height: 41.2px;
+    outline: none;
+    border: none;
+    color: white;
+    background:linear-gradient( 90deg,darkcyan,aqua);
+    font-size: 17.5px;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 6.1px;
+    cursor: pointer;
+    transition: 0.7s;
+    bottom: 73px;
+    margin-right: 15px;
+    margin-top: 27px;
+    font-family: 'Bree Serif', serif;
+}
+#signupbutton1{
+    position: relative;
+   
+    width:142px;
+    height: 41.2px;
+    outline: none;
+    border: none;
+    color: white;
+    background:linear-gradient( 90deg,darkcyan,aqua);
+    font-size: 17.5px;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 6.1px;
+    cursor: pointer;
+    transition: 0.7s;
+    bottom: 73px;
+    margin-left: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.bubbles1 img{
+    width: 50px;
+    animation:bubble1 7s linear infinite;
+    opacity: 0;
+    
+    
+}
+.bubbles1{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position:absolute;
+    transform: translateY(33px);
+    background: transparent;
+    color: darkcyan;
+}
+@keyframes bubble1{
+    0%{
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%{
+        
+        opacity:1;
+    }
+    70%{
+        
+        opacity:1;
+    }
+    100%{
+        transform: translateY(-77vh);
+        opacity:0;
+    }
+}
+
+.bubbles1 img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles1 img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles1 img:nth-child(3){
+    animation-delay: 3.7s;
+    width: 25px;
+}
+.bubbles1 img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubbles1 img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles1 img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles1 img:nth-child(6){
+    animation-delay: 5s;
+    width: 20px;
+}
+.bubbles1 img:nth-child(7){
+    animation-delay: 6s;
+    width: 35px;
+}
+.bubbles1 img:nth-child(8){
+        animation-delay: 7s;
+        width: 75px;
+
+}
+.bubbles1 img:nth-child(9){
+        animation-delay: 0.5s;
+        width: 25px;
+}
+
+
+
+#Submitted{
+    width: 200px;
+
+    padding: 15px 0px;
+    margin: 5px;
+    
+    border-radius: 25px;
+    position: relative;
+    top: 93px;
+    transform: translateX(0%) ;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    cursor:pointer;
+    text-transform: uppercase ;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    
+    overflow: hidden;
+    letter-spacing: 0.1px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    
+}
+
+
+
+
+#Submitted span{
+    background: darkturquoise;
+    position:absolute;
+    height: 100%;
+    width: 0%;
+    left:0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s ;
+}
+#Submitted:hover span{
+    width: 100%;
+}
+#Submitted:hover{
+    border: 2px solid darkcyan;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <a href="https://icons8.com/icon/17949/google"></a>
+    <a href="https://icons8.com/icon/62855/whatsapp"></a>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Sidebar.css">
+    <script src="SideBar.js"></script>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="Teacher'sSection.css" >
+    <script src="Count.js"></script>
+    <script src="Sidebar-buttons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo" id="sidebar1">
+            <div>
+
+                <span class="material-icons" id="close-button" onclick="closemenu()">
+                    close
+                </span>
+            </div>
+            <div class="sidemenu-logo"> <span class="material-icons" id="currency-1">
+                    currency_bitcoin
+                </span>
+                <h2>Side Menu</h2>
+            </div>
+
+            <hr class="hr">
+            <div id="Searchdiv"><a href="#"><span class="material-icons" id="search">search</span></a> <input
+                    type="text" placeholder="Search" id="search-type"> </div>
+
+            <ul>
+                <li><button id="dashboard-button" onclick="dashboardSectionOpen()"><span
+                            class="material-icons">dashboard_customize</span>Dashboard</button></li>
+                <li><button id="teacher-button" onclick="teacherSectionOpen()"><span
+                            class="material-icons">dashboard_customize</span>Teachers</button></li>
+                <li><a href="#"><span class="material-icons">dashboard_customize</span>Order</a></li>
+                <li><a href="#"><span class="material-icons">dashboard_customize</span>Analytics</a></li>
+                <li><a href="#"><span class="material-icons">person</span>User</a></li>
+                <li><a href="#"><span class="material-icons">favorite_border</span>Saved</a></li>
+                <li><a href="#"><span class="material-icons">settings</span>Settings</a></li>
+            </ul>
+        </div>
+        <div id="menu-button1">
+            <span class="material-icons" id="menu-button" onclick="openmenu()">
+                menu
+            </span>
+            <a href="https:facebook.com">
+                <i class="fa fa-facebook-f" style="font-size:24.8px" id="facebook"></i>
+            </a>
+            <a href="https:google.com" id="google"><img
+                    src="https://img.icons8.com/color/24.8/000000/google-logo.png" />
+            </a>
+            <a href="https:whatsapp.com">
+                <img src="whatsapp.png" id="whatsapp">
+            </a>
+            <a href="https:gmail.com">
+                <img src="gmail.png" id="gmail">
+            </a>
+            <span class="material-icons" id="dashboard">dashboard_customize</span>
+
+        </div>
+
+        <div id="main">
+
+            <div id="Boxes">
+                <div id="Total-teacher">
+                    <div id="spanteacher">Total Teacher</div><br>
+                    <div class="material-icons" id="computer">computer</div>
+                    <div id="total-teacher-count">0</div>
+                    <div id="pending-teacher">Pending Teacher</div>
+                    <div id="pending-teacher-count">0</div>
+
+
+                </div>
+
+                <div id="Total-student">
+                    <div id="span-student">Total Student</div><br>
+                    <div class="material-icons" id="person-add">person_add</div>
+                    <div id="total-student-count">0</div>
+                    <div id="pending-student">Pending Student</div>
+                    <div id="pending-student-count">0</div>
+
+
+                </div>
+                <div id="Teacher-salary">
+                    <div id="span-salary">Teacher Salary</div><br>
+                    <div class="material-icons" id="attach-money">attach_money</div>
+                    <div id="total-salary-count">0</div>
+                    <div id="pending-salary">Pending Salary</div>
+                    <div id="pending-salary-count">0</div>
+
+
+                </div>
+                <div id="Student-fee">
+                    <div id="span-fee">Student fee</div><br>
+                    <div class="material-icons" id="attach-money">attach_money</div>
+                    <div id="total-fee-count">0</div>
+                    <div id="pending-ques">Pending Ques</div>
+                    <div id="pending-fee-count">0</div>
+
+
+                </div>
+            </div>
+            <div id="allbuttons">
+                <button onclick="TeacherCount()" id="teacher-count-button">Add Teacher</button>
+                <button onclick="PendingTeacherCount()" id="pending-teacher-count-button">Pending Teacher</button>
+                <button onclick="TeacherCount()" id="student-count-button">Add Student</button>
+                <button onclick="PendingTeacherCount()" id="pending-student-count-button">Pending Student </button>
+                <button onclick="TeacherCount()" id="salary-count-button">Add Salary</button>
+                <button onclick="PendingTeacherCount()" id="pending-salary-count-button">Pending Salary</button>
+                <button onclick="TeacherCount()" id="fee-count-button">Student Fee</button>
+                <button onclick="PendingTeacherCount()" id="pending-fee-count-button">Pending Fee</button>
+            </div>
+            <div id="Today-classes-box">
+                <h2>Updated Schedule</h2>
+                <p id="pointing-to-box">------></p>
+                <div id="Today-classes">
+                    <div>
+
+
+                    </div>
+                    <span>Today's Classes</span><br>
+                    <div id="content">---> 1st year Morning</div><br>
+                    <span id="content2">---> 2nd year Morning</span>
+                </div>
+
+
+            </div>
+
+            <!--         Teacher's Section  -->
+
+
+            
+                <section id="Teachers">
+                    <div class="banner12">
+                        <div id="TeachersNew">
+                            <h2>Add Teacher</h2>
+                            <fieldset id="TeachersForm">
+                                <input type="text" placeholder="Teacher's Name" name="TeacherName" id="teachername">
+                                <input type="text" placeholder="Course" name="Course" id="course">
+                                <input type="tel" placeholder="Teacher's No" name="teachernumber" id="teachernumber">
+                                <input type="number" placeholder="Salary Expectation" name="salaryexpect" id="salaryexpect">
+                                <input type="number" placeholder="Current Salary" name="salaryexpect" id="salaryexpect">
+
+                                <label for="qualification">Qualification</label>
+                                <select name="qualification" id="Qualification">
+                                    <option value="Graduate">Graduate</option>
+                                    <option value="UnderGraduate">Under Graduate</option>
+                                    <option value="PostGraduate">Post Graduate</option>
+                                    <option value="PhD">PhD</option>
+
+                                </select>
+                              
+                            </fieldset>
+                            <button id="saveTeacherSectionButton">Save Teacher</button>
+                            <button id="deleteTeacherSectionButton">Delete Teacher</button>
+
+                        </div>
+
+
+                       
+
+                </section>
+           
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

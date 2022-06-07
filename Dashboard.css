@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.main{
+    border: 2px solid black;
+    
+}
+.container{
+    display: flex;
+    border: 2px solid blue;
+    height: fit-content;
+  
+
+}
+#main{
+    border: 2px solid greenyellow;
+    height: 100vh;
+    width: fit-content;
+}
+#Total-teacher{
+    border-radius: 18px;
+    width: 20%;
+    margin:20px;
+    background-color: #047BD5;
+    
+    
+}
+#Total-student{
+    background-color: seagreen;
+    width: 20%;
+    margin:20px;
+    margin-left: 20px;
+    border-radius: 18px;
+}
+#Teacher-salary{
+    background: linear-gradient(90deg,darkorange 25%,orange);
+    width: 20%;
+    margin:20px;
+    margin-left: 20px;
+    border-radius: 18px;
+}
+#Student-fee{
+    width: 20%;
+    background: linear-gradient(90deg,red 15%,rgb(218, 80, 103));
+    margin:20px;
+    margin-left: 20px;
+   
+   
+    border-radius: 18px;
+    box-sizing: border-box;
+
+}
+#Boxes{
+    display: flex;
+    
+    justify-content: space-between;
+    
+
+    
+ 
+}
+
+#spanteacher{
+    margin-left:21px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+    
+}
+#pending-teacher{
+   margin-left: 60px;
+   margin-top: 25px;
+   margin-right: 10px;
+   margin-bottom: 25px;
+   display: inline-block;
+   color: #fff;
+ 
+   
+}
+#computer{
+        margin-left: 26px;
+        margin-top: 5px;
+        display: inline-block;
+        color: #fff;
+
+
+}
+#total-teacher-count{
+    display: inline-block;
+    margin-left: 137px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+
+}
+#pending-teacher-count{
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 2px;
+    color: #fff;
+}
+#teacher-count-button{
+   
+   
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background:darkslategray;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 15px;
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+
+}
+#pending-teacher-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background:linear-gradient( 90deg,#4897d2,#047BD5);
+    font-size: 13.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+
+
+}
+#span-student{
+    margin-left:21px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+
+}
+#pending-student{
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left:61px ;
+    display: inline-block;
+    color: #fff;
+}
+#total-student-count{
+    display: inline-block;
+    margin-left: 137px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+#pending-student-count{
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 2px;
+    color: #fff;
+}
+#person-add{
+    margin-left: 26px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #fff;
+
+}
+
+#span-salary{
+    margin-left:21px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+
+
+}
+#total-salary-count{
+    display: inline-block;
+    margin-left: 137px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+#pending-salary{
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left:68px ;
+    display: inline-block;
+    color: #fff;
+}
+#pending-salary-count{
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 2px;
+    color: #fff;
+}
+#attach-money{
+    margin-left: 26px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #fff;
+
+}
+#span-fee{
+    margin-left:21px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+
+}
+#total-fee-count{
+    display: inline-block;
+    margin-left: 137px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+#pending-ques{
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left:76px ;
+    display: inline-block;
+    color: #fff;   
+}
+#pending-fee-count{
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 2px;
+    color: #fff;
+}
+#pending-student-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background:linear-gradient( 90deg,#4897d2,#047BD5);
+    font-size: 13.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+
+}
+#student-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background: darkslategray;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 80px;
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+
+}
+#pending-salary-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background:linear-gradient( 90deg,#4897d2,#047BD5);
+    font-size: 13.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+}
+#salary-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background: darkslategray;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 68px;
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+}
+#pending-fee-count-button{
+    width:105px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background:linear-gradient( 90deg,#4897d2,#047BD5);
+    font-size: 13.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+}
+#fee-count-button{
+    width:108px;
+    height: 37px;
+    outline: none;
+    border: 0;
+    color: white;
+    background: darkslategray;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    margin-top: 5px;
+    margin-left: 60px;
+    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.7s;
+    
+    padding-left: 0px;
+}
+
+#facebook{
+    color: #fff;
+    position: relative;
+    top:30% ;
+    left: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    
+}
+#facebook:hover{
+    top: 27.7%;
+    color: #4267B2;
+}
+#google{
+    color: #fff;
+    position: relative;
+    top:39% ;
+    right: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+
+    
+  
+
+}
+#google:hover{
+    
+    top: 36.7%;
+}
+#whatsapp{
+   position: relative;
+   top: 40.5%;
+   left: 12px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   transition: 0.5s;
+   cursor: pointer;
+}
+#whatsapp:hover{
+    top: 37.7%;
+}
+#gmail{
+    position: relative;
+    top: 41.52%;
+    left: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+#gmail:hover{
+    top: 39.2%;
+}
+#dashboard{
+    color: #fff;
+    position: relative;
+    top:2%;
+    left: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#dashboard:hover{
+    top: -1%;
+}
+#Today-classes{
+    
+    margin-top: -55.1px;
+    width: 425px;
+    height: 225px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left: 56.9%;
+    background: linear-gradient(0deg,darkorange 15%,orange);
+    font-family: 'Bree Serif', serif;
+    transform: skewY(20deg);
+    box-sizing: border-box;
+    transform: skewX(-30deg);
+    box-shadow: 14px 10px 11px 17.5px darkgrey;
+    
+   
+    font-size:27px;
+    font-weight: bolder;
+    opacity: 0.7;
+    border-radius: 18px;
+    border: 2px solid darkorange;
+   
+    
+    text-transform: uppercase;
+    word-spacing: 10px;
+    transform: 1s;
+    
+}
+#Today-classes-box{
+    perspective: -1000px;
+  
+    box-sizing: border-box;
+    height: 485px;
+    overflow: hidden;
+}
+#content{
+    font-size: 24px;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+    
+    margin-top: 24px;
+}
+#Today-classes:hover{
+    animation-name: move1 ;
+  
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+    animation-direction: alternate;
+   
+}
+@keyframes move1{
+    0%{ 
+        left:57.3% ;
+    }
+    100%{
+        left: 40%;
+        transform: skewY(0deg);
+        transform: skewX(0deg);
+    
+    }
+}
+#content2{
+    font-size: 24px;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+    
+    position: relative;
+    bottom: 35px;
+
+}
+#Today-classes::after{
+    content: "";
+    position: absolute;
+    top: 11.2px;
+    left: 414px;
+    width: 25px;
+    height: 208px;
+    background: darkorange;
+    transform: skewY(60deg);
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    
+    
+     
+}
+#Today-classes::before{
+    content: "";
+    position: absolute;
+    top: -9.4px;
+    left: 203.2px;
+    width: 33px;
+    height: 441px;
+    background: linear-gradient(90deg,darkorange,orange);
+    transform: skewX(90deg);
+    transform:skewY(-60deg);
+  
+   
+    transform: rotate(90deg);
+    border-bottom-right-radius: 10px;
+   
+    
+}
+#Today-classes-box h2{
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: 58px;
+    margin-left: 29.5%;
+    color: Black;
+    font-family: 'Bree Serif', serif;
+}
+#pointing-to-box{
+    font-size: 125px;
+    position: relative;
+    top: 110px;
+    left: 89px;
+    overflow: hidden;
+
+}
+#pointing-to-box::after{
+    content: "";
+    background: #fff;
+    position: absolute;
+    left: 0;
+    width:100%;
+    height: 100%;
+    animation-name: arrowmove;
+    border-left: 2px solid grey;
+    animation-duration: 1.5s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes arrowmove{
+    0%{
+        left:0%;
+    }
+   
+    100%{
+        left: 340px;
+    }
+}
